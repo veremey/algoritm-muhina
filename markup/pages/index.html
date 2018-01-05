@@ -1,0 +1,1115 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+  <head>
+    {{> head/head head.defaults}}
+  </head>
+
+  <body class="page">
+    %=symbols=%
+
+    <div class="page__container">
+      <div class="constant">
+        <div class="constant__wrap">
+          <header class="constant__header">
+            <h2 class="constant__title">Интерактивный алгоритм <br> выбора антиэпилептических препаратов в детской практике</h2>
+            <h2 class="constant__subtitle">подготовленный на основании публикации К.Ю. Мухина и соавт. <br>  «Основные принципы лечения эпилепсии. Алгоритм выбора антиэпилептических препаратов»<sup>1</sup></h2>
+          </header>
+          <div class="slider">
+            <p class="constant__desc">С помощью алгоритма ниже вы сможете подобрать антиэпилептический препарат.</p>
+            <p class="constant__desc">Укажите <strong>форму эпилепсии</strong>, <strong>возраст дебюта приступа</strong>, <strong>тип приступа</strong> и получите назначение по терапии.</p>
+            <div class="slider__wrap">
+              <div class="slider__line"></div>
+              <ul class="slider__list">
+                <li class="slider__item is-active">
+                  <a href="#" class="slider__link">
+                    <div class="slider__pic">
+                      <div class="slider__picbox">
+                        {{Icon iconName='rauf' className='slider__img'  iconWidth='25' iconHeight='25'}}
+                      </div>
+                    </div>
+                    <span class="slider__name">Форма эпилепсии</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a href="#" class="slider__link">
+                    <div class="slider__pic">
+                      <div class="slider__picbox">
+                        {{Icon iconName='calendar' className='slider__img'  iconWidth='25' iconHeight='25'}}
+                      </div>
+                    </div>
+                    <span class="slider__name">Дебют приступа</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a href="#" class="slider__link">
+                    <div class="slider__pic">
+                      <div class="slider__picbox">
+                        {{Icon iconName='head' className='slider__img'  iconWidth='25' iconHeight='25'}}
+                      </div>
+                    </div>
+                    <span class="slider__name">Тип приступа</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- start -->
+      <div class="test test-start">
+        <h3 class="test__title">Укажите форму эпилепсии</h3>
+        <ul class="test__list">
+          <li class="test__item" data-answer="1">
+            <button class="test__variant">Симптоматическая эпилепсия </button>
+          </li>
+          <li class="test__item" data-answer="2">
+            <button class="test__variant">Эпилептические энцефалопатии </button>
+          </li>
+          <li class="test__item" data-answer="3">
+            <button class="test__variant">Идиопатическая эпилепсия </button>
+          </li>
+          <li class="test__item" data-answer="4">
+            <button class="test__variant">Трудно классифицируемая эпилепсия </button>
+          </li>
+        </ul>
+        <div class="test__next">
+          <button class="test__btn btn-go-next">далее</button>
+        </div>
+      </div>
+      <!-- 1 -->
+      <div class="test test-1">
+        <h3 class="test__title">Укажите возраст дебюта приступа</h3>
+        <ul class="test__list">
+          <li class="test__item"  data-answer="11">
+            <button class="test__variant">До 1 года </button>
+          </li>
+          <li class="test__item"  data-answer="12">
+            <button class="test__variant">После 1 года</button>
+          </li>
+        </ul>
+        <div class="test__next">
+          <button class="test__btn btn-go-next">далее</button>
+        </div>
+      </div>
+      <!-- 1.1 -->
+        <div class="test test-11 test_last">
+          <h3 class="test__title">Укажите тип приступа</h3>
+          <ul class="test__list">
+            <li class="test__item" data-answer="111">
+              <button class="test__variant">Фокальные</button>
+            </li>
+          </ul>
+          <div class="test__next">
+            <button class="test__btn btn-result">Получить результат</button>
+          </div>
+
+          <div class="test__result result-111">
+            <div class="result">
+              <h3 class="result__title at-center is-upper">Описание</h3>
+              <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+              <div class="simptom">
+                <h6 class="simptom__title">Симптоматическая эпилепсия, до одного года, фокальные приступы</h6>
+                <ul class="simptom__list">
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">Фокальные симптоматические приступы (при подтвержденных эпилептогенных изменениях на МРТ).</p>
+                    </div>
+                  </li>
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">ЭЭГ: Региональные, мультирегиональные эпилептиформные разряды <br> (с/без диффузных разрядов).</p>
+                    </div>
+                  </li>
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">Клиника: фокальные приступы, не соответствующие характеристикам инфантильных спазмов; иногда сопровождаются потерей сознания и/или генерализованными судорогами.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="recomendation">
+                <div class="recomendation__pack">
+                  <div class="recomendation__pack_pic">
+                    {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                  </div>
+                  <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+                </div>
+                <div class="recomendation__wrap">
+                  <div class="choice is-active">
+                    <div class="choice__num">1</div>
+                    <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                    <p class="choice__desc choice_reg">Вальпроевая кислота  <br> (Депакин<sup>®</sup> Хроносфера<sup>2</sup>) <br> или окскарбазепин</p>
+                  </div>
+                  <div class="choice ">
+                    <div class="choice__num">2</div>
+                    <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                    <p class="choice__desc">топирамат, леветирацетам, фенобарбитал</p>
+                  </div>
+                </div>
+                <button class="recomendation__btn">получить новую рекомендацию</button>
+              </div>
+            </div>
+            <!-- case -->
+            {{> case/case}}
+            <!-- literature -->
+            {{> literature/literature }}
+          </div>
+        </div>
+      <!-- 1.2 -->
+        <div class="test test-12 test_last ">
+          <h3 class="test__title">Укажите тип приступа</h3>
+          <ul class="test__list">
+            <li class="test__item" data-answer="121">
+              <button class="test__variant">Фокальные</button>
+            </li>
+            <li class="test__item" data-answer="122">
+              <button class="test__variant">Вторично генерализованные</button>
+            </li>
+          </ul>
+          <div class="test__next">
+            <button class="test__btn btn-result">Получить результат</button>
+          </div>
+        <!-- result 1.2.1 -->
+          <div class="test__result result-121">
+            <div class="result">
+              <h3 class="result__title at-center is-upper">Описание</h3>
+              <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+              <div class="simptom">
+                <h6 class="simptom__title">Симптоматическая эпилепсия, после одного года, фокальные приступы</h6>
+                <ul class="simptom__list">
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">Фокальные симптоматические судорожные приступы (при подтвержденных эпилептогенных изменениях на МРТ). </p>
+                    </div>
+                  </li>
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">ЭЭГ: преимущественно региональные изменения, диффузные разряды отсутствуют.</p>
+                    </div>
+                  </li>
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">Клиника: Приступы, при которых возможны разнообразные проявления, указывающие на их фокальный характер.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="recomendation">
+                <div class="recomendation__pack">
+                  <div class="recomendation__pack_pic">
+                    {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                  </div>
+                  <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+                </div>
+                <div class="recomendation__wrap">
+                  <div class="choice is-active">
+                    <div class="choice__num">1</div>
+                    <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                    <p class="choice__desc">
+                      <span class="choice_reg">окскарбазепин, карбамазепин</span> <br> <span class="choice_small">(Всегда ли Вы уверены, что признаки вторичной генерализации полностью отсутствуют?)</span></p>
+                  </div>
+                  <div class="choice ">
+                    <div class="choice__num">2</div>
+                    <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                    <p class="choice__desc">
+                    <span class="choice_small">Вальпроевая кислота (Депакин® Хроносфера2)</span>, топирамат, леветирацетам, ламотриджин, зонисамид, перампанел, лакосамид (с 16 лет); фенобарбитал, фенитоин, сукцинимиды (в комбинации).</p>
+                  </div>
+                </div>
+                <button class="recomendation__btn">получить новую рекомендацию</button>
+              </div>
+            </div>
+            <!-- case -->
+            {{> case/case}}
+            <!-- literature -->
+            {{> literature/literature }}
+          </div>
+        <!-- result 1.2.2 -->
+          <div class="test__result result-122">
+            <div class="result">
+              <h3 class="result__title at-center is-upper">Описание</h3>
+              <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+              <div class="simptom">
+                <h6 class="simptom__title">Симптоматическая эпилепсия, после одного года, вторично-генирализованные приступы</h6>
+                <ul class="simptom__list">
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">Фокальные и вторично-генерализованные судорожные приступы.</p>
+                    </div>
+                  </li>
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">ЭЭГ: Региональные,  мультирегиональные и диффузные эпилептиформные разряды,  вторичная билатеральная  синхронизация. </p>
+                    </div>
+                  </li>
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">Клиника: Фокальные приступы  с/без выключения сознания и/или генерализованных судорог.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="recomendation">
+                <div class="recomendation__pack">
+                  <div class="recomendation__pack_pic">
+                    {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                  </div>
+                  <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+                </div>
+                <div class="recomendation__wrap">
+                  <div class="choice is-active">
+                    <div class="choice__num">1</div>
+                    <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                    <p class="choice__desc">Вальпроевая кислота (Депакин<sup>®</sup> Хроносфера<sup>2</sup>)
+                      </p>
+                  </div>
+                  <div class="choice ">
+                    <div class="choice__num">2</div>
+                    <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                    <p class="choice__desc"> топирамат, леветирацетам, ламотриджин,  зонисамид, перампанел, лакосамид (с 16 лет); фенобарбитал, фенитоин,  сукцинимиды (в комбинации).</p>
+                  </div>
+                </div>
+                <button class="recomendation__btn">получить новую рекомендацию</button>
+              </div>
+            </div>
+            <!-- case -->
+            {{> case/case}}
+            <!-- literature -->
+            {{> literature/literature }}
+          </div>
+
+        </div>
+
+      <!-- 2 -->
+      <div class="test test-2">
+        <h3 class="test__title">Укажите возраст дебюта приступа</h3>
+        <ul class="test__list">
+          <li class="test__item"  data-answer="21">
+            <button class="test__variant">До 1 года</button>
+          </li>
+          <li class="test__item"  data-answer="22">
+            <button class="test__variant">После 1 года</button>
+          </li>
+        </ul>
+        <div class="test__next">
+          <button class="test__btn btn-go-next">далее</button>
+        </div>
+      </div>
+      <!-- 2.1 -->
+      <div class="test test-21 test_last ">
+        <h3 class="test__title">Укажите тип приступа</h3>
+        <ul class="test__list">
+          <li class="test__item" data-answer="211">
+            <button class="test__variant">В виде инфантильных спазмов</button>
+          </li>
+        </ul>
+        <div class="test__next">
+          <button class="test__btn btn-result">Получить результат</button>
+        </div>
+      <!-- result 2.1.1 -->
+        <div class="test__result result-211">
+          <div class="result">
+            <h3 class="result__title at-center is-upper">Описание</h3>
+            <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+            <div class="simptom">
+              <h6 class="simptom__title">Эпилептические энцефалопатии, до одного года, инфантильные спазмы</h6>
+              <ul class="simptom__list">
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Эпилептические (инфантильные)  спазмы. Эпилептическая энцефалопатия младенческого  возраста (синдромы Веста, Отахара и др.). </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                    </div>
+
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">ЭЭГ: Гипсаритмия; <br> паттерн вспышка-угнетение; <br>электродекремент.</p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                    </div>
+
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Клиника: Кивки, складывания,  серийные стереотипные приступы с внезапным сгибанием,  разгибанием или смешанного  сгибательно-разгибательного типа,  вовлекающие преимущественно проксимальную и туловищную  мускулатуру. </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="recomendation">
+              <div class="recomendation__pack">
+                <div class="recomendation__pack_pic">
+                  {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                </div>
+                <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+              </div>
+              <div class="recomendation__wrap">
+                <div class="choice is-active">
+                  <div class="choice__num">1</div>
+                  <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                  <p class="choice__desc">
+                    <span class="choice_reg">Вальпроевая кислота (Депакин<sup>®</sup> Хроносфера<sup>2</sup>) и/или гормональная терапия </p>
+                </div>
+                <div class="choice ">
+                  <div class="choice__num">2</div>
+                  <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                  <p class="choice__desc">топирамат, окскарбазепин, фенобарбитал, сукцинимиды (главным образом в комбинации)</p>
+                </div>
+              </div>
+              <button class="recomendation__btn">получить новую рекомендацию</button>
+            </div>
+
+          </div>
+          <!-- case -->
+          {{> case/case}}
+          <!-- literature -->
+          {{> literature/literature }}
+        </div>
+
+      </div>
+      <!-- 2.2 -->
+      <div class="test test-22 test_last ">
+        <h3 class="test__title">Укажите тип приступа</h3>
+        <ul class="test__list">
+          <li class="test__item" data-answer="221">
+            <button class="test__variant">С полиморфной симптоматикой</button>
+          </li>
+          <li class="test__item" data-answer="222">
+            <button class="test__variant">При прогрессирующих заболеваниях</button>
+          </li>
+          <li class="test__item" data-answer="223">
+            <button class="test__variant">С постоянной продолженной активностью во сне</button>
+          </li>
+        </ul>
+        <div class="test__next">
+          <button class="test__btn btn-result">Получить результат</button>
+        </div>
+      <!-- result 2.2.1 -->
+        <div class="test__result result-221">
+          <div class="result">
+            <h3 class="result__title at-center is-upper">Описание</h3>
+            <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+            <div class="simptom">
+              <h6 class="simptom__title">Эпилептические энцефалопатии, после одного года, с полиморфной симптоматикой</h6>
+              <ul class="simptom__list">
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Синдром Леннокса-Гасто; <br> приступы: тонические,  миатонические, атипичные абсансы и др. </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                    </div>
+
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">ЭЭГ: Диффузная медленная  активность острая-медленная волна; <br> пробеги диффузной быстроволновой  активности, особенно во сне. </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                    </div>
+
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Клиника: Полиморфизм  (несколько типов) приступов у пациента, включая замирания,  приступы падений; <br> умственная отсталость. </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="recomendation">
+              <div class="recomendation__pack">
+                <div class="recomendation__pack_pic">
+                  {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                </div>
+                <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+              </div>
+              <div class="recomendation__wrap">
+                <div class="choice is-active">
+                  <div class="choice__num">1</div>
+                  <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                  <p class="choice__desc">
+                    <span class="choice_reg">Вальпроевая кислота (Депакин<sup>®</sup> Хроносфера<sup>2</sup>)  </p>
+                </div>
+                <div class="choice ">
+                  <div class="choice__num">2</div>
+                  <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                  <p class="choice__desc">топирамат, ламотриджин, леветирацетам,  зонисамид, перампанел, этосуксимид  и бензодиазепины (в комбинации); фенитоин,  карбамазепин и окскарбазепин (в комбинации с вальпроатом). </p>
+                </div>
+              </div>
+              <button class="recomendation__btn">получить новую рекомендацию</button>
+            </div>
+
+          </div>
+          <!-- case -->
+          {{> case/case}}
+          <!-- literature -->
+          {{> literature/literature }}
+        </div>
+
+      <!-- result 2.2.2 -->
+        <div class="test__result result-222">
+          <div class="result">
+            <h3 class="result__title at-center is-upper">Описание</h3>
+            <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+            <div class="simptom">
+              <h6 class="simptom__title">Эпилептические энцефалопатии, после одного года, при прогрессирующих заболеваниях</h6>
+              <ul class="simptom__list">
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Группа прогрессирующих форм  эпилепсии с миоклонусом.  </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                    </div>
+
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">ЭЭГ: Частые полипик-волновые  разряды; региональная  эпилептиформная активность  в затылочных отведениях;  замедление основного ритма, региональные, мультирегиональные,  генерализованные разряды. </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                    </div>
+
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Клиника: Регресс развития,  появление новых неврологических нарушений (нарушение зрения,  двигательные, психические нарушения, гиперкинезы и др.).</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="recomendation">
+              <div class="recomendation__pack">
+                <div class="recomendation__pack_pic">
+                  {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                </div>
+                <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+              </div>
+              <div class="recomendation__wrap">
+                <div class="choice is-active">
+                  <div class="choice__num">1</div>
+                  <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                  <p class="choice__desc">
+                    <span class="choice_reg">Вальпроевая кислота (Депакин<sup>®</sup> Хроносфера<sup>2</sup>)  </p>
+                </div>
+                <div class="choice ">
+                  <div class="choice__num">2</div>
+                  <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                  <p class="choice__desc">леветирацетам; топирамат; зонисамид; <br> перампанел; ламотриджин, этосуксимид (в комбинации); фенобарбитал; бензодиазепины. </p>
+                </div>
+              </div>
+              <button class="recomendation__btn">получить новую рекомендацию</button>
+            </div>
+
+          </div>
+          <!-- case -->
+          {{> case/case}}
+          <!-- literature -->
+          {{> literature/literature }}
+        </div>
+      <!-- result 2.2.3 -->
+        <div class="test__result result-223">
+          <div class="result">
+            <h3 class="result__title at-center is-upper">Описание</h3>
+            <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+            <div class="simptom">
+              <h6 class="simptom__title">Эпилептические энцефалопатии, после одного года, c постоянной продолженной активностью во сне</h6>
+              <ul class="simptom__list">
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Возможны атипичные абсансы; <br> атонические; фокальные моторные; <br> вторично-генерализованные  судорожные. </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                    </div>
+
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">ЭЭГ: Постоянная продолженная  диффузная активность острая- медленная волна во время  медленноволнового сна.  </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                    </div>
+
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Клиника: Приступы не у всех  пациентов; доминирует задержка психического  развития, трудности обучения. </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="recomendation">
+              <div class="recomendation__pack">
+                <div class="recomendation__pack_pic">
+                  {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                </div>
+                <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+              </div>
+              <div class="recomendation__wrap">
+                <div class="choice is-active">
+                  <div class="choice__num">1</div>
+                  <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                  <p class="choice__desc">
+                    <span class="choice_reg">Вальпроевая кислота (Депакин<sup>®</sup> Хроносфера<sup>2</sup>)  </p>
+                </div>
+                <div class="choice ">
+                  <div class="choice__num">2</div>
+                  <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                  <p class="choice__desc">топирамат, ламотриджин, леветирацетам,  зонисамид, перампанел, этосуксимид и бензодиазепины (в комбинации); фенитоин,  карбамазепин и окскарбазепин (в комбинации с вальпроатом). </p>
+                </div>
+              </div>
+              <button class="recomendation__btn">получить новую рекомендацию</button>
+            </div>
+
+          </div>
+          <!-- case -->
+          {{> case/case}}
+          <!-- literature -->
+          {{> literature/literature }}
+        </div>
+
+      </div>
+
+      <!-- 3 -->
+      <div class="test test-3">
+        <h3 class="test__title">Укажите возраст дебюта приступа</h3>
+        <ul class="test__list">
+          <li class="test__item"  data-answer="31">
+            <button class="test__variant">После 1 года</button>
+          </li>
+        </ul>
+        <div class="test__next">
+          <button class="test__btn btn-go-next">далее</button>
+        </div>
+      </div>
+      <!-- 3.1 -->
+
+      <div class="test test-31 test_last ">
+        <h3 class="test__title">Укажите тип приступа</h3>
+        <ul class="test__list">
+          <li class="test__item" data-answer="311">
+            <button class="test__variant">Фокальные</button>
+          </li>
+          <li class="test__item" data-answer="312">
+            <button class="test__variant">Генерализованные</button>
+          </li>
+          <li class="test__item" data-answer="313">
+            <button class="test__variant">Абсансы</button>
+          </li>
+          <li class="test__item" data-answer="314">
+            <button class="test__variant">Юношеская миоклоническая эпилепсия</button>
+          </li>
+        </ul>
+        <div class="test__next">
+          <button class="test__btn btn-result">Получить результат</button>
+        </div>
+      <!-- result 3.1.1 -->
+        <div class="test__result result-311">
+          <div class="result">
+            <h3 class="result__title at-center is-upper">Описание</h3>
+            <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+            <div class="simptom">
+              <h6 class="simptom__title">Симптоматическая эпилепсия, после одного года, фокальные приступы</h6>
+              <ul class="simptom__list">
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Идиопатическая фокальная  эпилепсия (роландическая  эпилепсия, идиопатические  затылочные эпилепсии).  </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                    </div>
+
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">ЭЭГ: Региональная активность – ДЭПД<sup>*</sup> с локализацией в центрально-височных и/или затылочных отведениях со значительным нарастанием во сне..</p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                    </div>
+
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Клиника: Проявления приступов  предполагают фокальный характер, связь со сном, приступы в виде  онемения в полости рта, потери речи, перекоса рта, слюнотечения,  судорожных подергиваний руки и лица;  нередко сохранность сознания. </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="recomendation">
+              <div class="recomendation__pack">
+                <div class="recomendation__pack_pic">
+                  {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                </div>
+                <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+              </div>
+              <div class="recomendation__wrap">
+                <div class="choice is-active">
+                  <div class="choice__num">1</div>
+                  <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                  <p class="choice__desc">
+                    <span class="choice_reg">Вальпроевая кислота (Депакин<sup>®</sup> Хроносфера<sup>2</sup>)</p>
+                </div>
+                <div class="choice ">
+                  <div class="choice__num">2</div>
+                  <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                  <p class="choice__desc">этосуксимид, леветирацетам, топирамат, карбамазепин или окскарбазепин (только у детей после 7 лет, в небольших дозах, лучше в комбинации с вальпроатами).</p>
+                </div>
+              </div>
+              <button class="recomendation__btn">получить новую рекомендацию</button>
+            </div>
+
+          </div>
+          <!-- case -->
+          {{> case/case}}
+          <!-- literature -->
+          {{> literature/literature }}
+        </div>
+
+      <!-- result 3.1.2 -->
+        <div class="test__result result-312">
+          <div class="result">
+            <h3 class="result__title at-center is-upper">Описание</h3>
+            <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+            <div class="simptom">
+              <h6 class="simptom__title">Идиопатическая эпилепсия, после одного года, генерализованные приступы</h6>
+              <ul class="simptom__list">
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Абсансы и первично-генерализованные судорожные приступы(юношеская абсансная эпилепсия или эпилепсия с изолированными генерализованными судорожными приступами).</p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">ЭЭГ: Генерализованная эпилептиформная активность, в том числекомплексы пик-волна с частотой 3 Гц. </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Клиника: Сочетание приступов  замирания с симметричными судорожными приступами с потерей  сознания или изолированные  судорожные приступы с потерей  сознания. Дебют в школьном  или более старшем возрасте.  </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="recomendation">
+              <div class="recomendation__pack">
+                <div class="recomendation__pack_pic">
+                  {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                </div>
+                <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+              </div>
+              <div class="recomendation__wrap">
+                <div class="choice is-active">
+                  <div class="choice__num">1</div>
+                  <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                  <p class="choice__desc">
+                    <span class="choice_reg">Вальпроевая кислота (Депакин<sup>®</sup> Хроносфера<sup>2</sup>) </p>
+                </div>
+                <div class="choice ">
+                  <div class="choice__num">2</div>
+                  <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                  <p class="choice__desc">леветирацетам. Возможно сочетание <br> <span class="choice_small">Депакина </span> с этосуксимидом, ламотриджином.</p>
+                </div>
+              </div>
+              <button class="recomendation__btn">получить новую рекомендацию</button>
+            </div>
+
+          </div>
+          <!-- case -->
+          {{> case/case}}
+          <!-- literature -->
+          {{> literature/literature }}
+        </div>
+      <!-- result 3.1.3 -->
+        <div class="test__result result-313">
+          <div class="result">
+            <h3 class="result__title at-center is-upper">Описание</h3>
+            <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+            <div class="simptom">
+              <h6 class="simptom__title">Идиопатическая эпилепсия, после одного года, абсансы</h6>
+              <ul class="simptom__list">
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Абсансы (детская абсансная эпилепсия)</p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">ЭЭГ: Генерализованная  эпилептиформная активность –  комплексы пик-волна  с частотой 3 Гц, провоцируются  гипервентиляцией. </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Клиника: Приступы в виде  кратковременного замирания с остановкой взора и прекращением  активности с дебютом  в дошкольном возрасте  при отсутствии других типов  приступов. </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="recomendation">
+              <div class="recomendation__pack">
+                <div class="recomendation__pack_pic">
+                  {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                </div>
+                <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+              </div>
+              <div class="recomendation__wrap">
+                <div class="choice is-active">
+                  <div class="choice__num">1</div>
+                  <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                  <p class="choice__desc">
+                    <span class="choice_reg">Вальпроевая кислота (Депакин<sup>®</sup> Хроносфера<sup>2</sup>) или этосуксимид</p>
+                </div>
+                <div class="choice ">
+                  <div class="choice__num">2</div>
+                  <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                  <p class="choice__desc">этосуксимид, ламотриджин, леветирацетам</p>
+                </div>
+              </div>
+              <button class="recomendation__btn">получить новую рекомендацию</button>
+            </div>
+
+          </div>
+          <!-- case -->
+          {{> case/case}}
+          <!-- literature -->
+          {{> literature/literature }}
+        </div>
+      <!-- result 3.1.4 -->
+        <div class="test__result result-314">
+          <div class="result">
+            <h3 class="result__title at-center is-upper">Описание</h3>
+            <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+            <div class="simptom">
+              <h6 class="simptom__title">Идиопатическая эпилепсия, после одного года, юношеская миоклоническая эпилепсия</h6>
+              <ul class="simptom__list">
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Абсансы, генерализованные  судорожные приступы,  миоклонические приступы; юношеская  миоклоническая эпилепсия. </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">ЭЭГ: Генерализованная  эпилептиформная (19-21) активность,  в том числе комплексы  пик-волна с частотой 3 Гц,  разряды полипик-волновой активности. . </p>
+                  </div>
+                </li>
+                <li class="simptom__item">
+                  <div class="simptom__head">
+                    <div class="simptom__pic">
+                      <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                    </div>
+                  </div>
+                  <div class="simptom__text">
+                    <p class="simptom__desc">Клиника: Миоклонические приступы  в виде подергиваний в конечностях (чаще в руках в утренние часы)  провоцируются депривацией сна. Дебют в школьном и юношеском  возрасте. Дополнительные признаки: нормальное развитие.  </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="recomendation">
+              <div class="recomendation__pack">
+                <div class="recomendation__pack_pic">
+                  {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                </div>
+                <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+              </div>
+              <div class="recomendation__wrap">
+                <div class="choice is-active">
+                  <div class="choice__num">1</div>
+                  <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                  <p class="choice__desc">
+                    <span class="choice_reg">Вальпроевая кислота (Депакин<sup>®</sup> Хроносфера<sup>2</sup>) у мужчин леветирацетам или топирамат у женщин </p>
+                </div>
+                <div class="choice ">
+                  <div class="choice__num">2</div>
+                  <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                  <p class="choice__desc">вальпроат, леветирацетам, топирамат, этосуксимид (в комбинации)</p>
+                </div>
+              </div>
+              <button class="recomendation__btn">получить новую рекомендацию</button>
+            </div>
+
+          </div>
+          <!-- case -->
+          {{> case/case}}
+          <!-- literature -->
+          {{> literature/literature }}
+        </div>
+      </div>
+
+
+      <!-- 4 -->
+      <div class="test test-4">
+        <h3 class="test__title">Укажите возраст дебюта приступа</h3>
+        <ul class="test__list">
+          <li class="test__item"  data-answer="41">
+            <button class="test__variant">До 1 года</button>
+          </li>
+        </ul>
+        <div class="test__next">
+          <button class="test__btn btn-go-next">далее</button>
+        </div>
+      </div>
+      <!-- 4.1 -->
+      <div class="test test-41 test_last ">
+        <h3 class="test__title">Укажите тип приступа</h3>
+        <ul class="test__list">
+          <li class="test__item" data-answer="411">
+            <button class="test__variant">Гемиклонические</button>
+          </li>
+        </ul>
+        <div class="test__next">
+          <button class="test__btn btn-result">Получить результат</button>
+        </div>
+        <!-- result 4.1.1 -->
+          <div class="test__result result-411">
+            <div class="result">
+              <h3 class="result__title at-center is-upper">Описание</h3>
+              <h4 class="result__title at-center ">Особенности, присущие данному диагнозу</h4>
+
+              <div class="simptom">
+                <h6 class="simptom__title">Симптоматическая эпилепсия, после одного года, фокальные приступы</h6>
+                <ul class="simptom__list">
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/warn.png" alt="simptom image" class="simptom__img">
+                      </div>
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">Группа прогрессирующих форм эпилепсии с миоклонусом. </p>
+                    </div>
+                  </li>
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/puls.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">ЭЭГ: Региональные,  мультирегиональные и диффузные эпилептиформные разряды.</p>
+                    </div>
+                  </li>
+                  <li class="simptom__item">
+                    <div class="simptom__head">
+                      <div class="simptom__pic">
+                        <img src="static/img/content/lupa.png" alt="simptom image" class="simptom__img">
+                      </div>
+
+                    </div>
+                    <div class="simptom__text">
+                      <p class="simptom__desc">Клиника: Судорожные приступы,  вовлекающие одну сторону тела (сторона может меняться  при разных приступах), возникающие при лихорадке  или перегреве. </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="recomendation">
+                <div class="recomendation__pack">
+                  <div class="recomendation__pack_pic">
+                    {{Icon iconName='drugs' className='recomendation__pack_img'  iconWidth='25' iconHeight='25'}}
+                  </div>
+                  <h4 class="recomendation__title">Рекомендация выбора АЭП<sup>*</sup></h4>
+                </div>
+                <div class="recomendation__wrap">
+                  <div class="choice is-active">
+                    <div class="choice__num">1</div>
+                    <h4 class="choice__title">АЭП 1-го выбора: </h4>
+                    <p class="choice__desc">
+                      <span class="choice_reg">Вальпроевая кислота (Депакин<sup>®</sup> Хроносфера<sup>2</sup>)</p>
+                  </div>
+                  <div class="choice ">
+                    <div class="choice__num">2</div>
+                    <h4 class="choice__title">АЭП 2-го выбора: </h4>
+                    <p class="choice__desc">топирамат,леветирацетам,фенобарбитал, сукцинимиды (в комбинации).<br> <span class="choice_small">Внимание! Противопоказаны: <br> карбамазепин; окскарбазепин; ламотриджин.</span></p>
+                  </div>
+                </div>
+                <button class="recomendation__btn">получить новую рекомендацию</button>
+              </div>
+
+            </div>
+            <!-- case -->
+            {{> case/case}}
+            <!-- literature -->
+            {{> literature/literature }}
+          </div>
+
+    </div>
+
+
+<!--     <script src="static/js/separate-js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script> -->
+
+    <!-- <script src="static/js/libraries/jquery-3.2.1.min.js"></script> -->
+    <script src="static/js/main.js"></script>
+    <script src="static/js/separate-js/custom.js"></script>
+  </body>
+
+</html>

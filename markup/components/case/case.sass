@@ -1,0 +1,61 @@
+
+.case
+	display: flex
+	width: 100%
+	text-align: left
+	margin-bottom: 40px
+	padding: 40px
+	background-color: #FFF
+	border: 1px solid #EDEDED
+	&__pic
+		flex: 0 0 160px
+		min-width: 160px
+		height: 160px
+		background-color: #DDD3E5
+		margin-right: 35px
+	&__content
+		flex: 0 0 510px
+	&__title
+		font-size: 24px
+		color: #a084b7
+		margin-bottom: 20px
+		text-transform: uppercase
+		+ll
+	&__bold
+		display: block
+		margin-bottom: 24px
+		font-size: 18px
+		color: #333
+		+ll
+	&__desc
+		font-size: 14px
+		line-height: 1.14
+		color: #333
+		+ll
+	&__arrow
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		width: 30%
+		&_link
+			position: relative
+			display: inline-block
+			width: 42px
+			height: 42px
+			border: 1px solid $fiolet
+			border-radius: 100%
+			+tr(.4s)
+			&:hover
+				border-color: $navy
+				.icon__icon-arrow-right
+					fill: $navy
+	&__text
+		width: 93%
+
+.icon__icon-arrow-right
+	display: inline-block
+	width: 10px
+	height: 22px
+	fill: $fiolet
+	+vcenter
+	+tr(.4s)

@@ -24,6 +24,8 @@
 		margin: 50px auto 35px
 		padding: 0
 		list-style: none
+		+r(700)
+			display: block
 	&__item
 		display: inline-block
 		width: 33.33%
@@ -32,7 +34,14 @@
 		border-left: 1px solid $fiolet
 		padding-bottom: 40px
 		&:first-of-type
-			border-left: none
+			border: none
+			padding-top: 0
+		+r(700)
+			display: block
+			width: 100%
+			border: none
+			border-top: 1px solid $fiolet
+			padding-top: 30px
 	&__head
 		height: 40px
 		display: flex
@@ -48,7 +57,7 @@
 	&__img
 		+vcenter
 	&__text
-		width: 80%
+		width: 84%
 		margin: 0 auto
 	&__desc
 		font-size: 16px
@@ -63,7 +72,7 @@
 		display: flex
 		align-items: center
 		justify-content: center
-		height: auto
+		height: 100px
 		min-height: 100px
 		text-align: center
 		padding: 15px 22px
@@ -76,6 +85,8 @@
 			height: 70px
 			border-radius: 100%
 			background-color: #DDD3E5
+			+r(400)
+				left: 15px
 		&_img
 			display: inline-block
 			vertical-align: top
@@ -85,16 +96,26 @@
 			max-height: 60%
 			fill: $fiolet
 			+vcenter
+		sup
+			font-size: 75%
 	&__title
+		width: calc(100% - 160px)
 		color: #fff
 		font-size: 24px
 		text-transform: uppercase
 		margin: 0
 		+ll
+		+r(500)
+			width: 100%
+			padding-left: 80px
+		+r(400)
+			padding-left: 70px
 	&__wrap
 		display: flex
 		justify-content: space-between
 		margin: 60px 0 40px
+		+r(700)
+			flex-wrap: wrap
 	&__btn
 		display: inline-block
 		vertical-align: top
@@ -123,6 +144,11 @@
 	padding: 10px 40px
 	text-align: left
 	vertical-align: top
+	+r(768)
+		padding: 10px 20px
+	+r(700)
+		width: 100%
+		padding: 30px 30px 10px
 	&:before
 		content: ''
 		position: absolute
@@ -131,11 +157,18 @@
 		width: 2px
 		height: calc(100% - 30px)
 		background-color: $gray
+		+r(700)
+			width: 100%
+			height: 2px
 	&:first-of-type
 		&:before
 			content: none
 	&.is-active
 		padding: 10px 65px
+		+r(768)
+			padding: 10px 30px
+			margin-bottom: 20px
+
 	&.is-active &
 		&__num
 			border: 2px solid $navy

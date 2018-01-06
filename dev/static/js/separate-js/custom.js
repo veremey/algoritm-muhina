@@ -10,6 +10,7 @@ $(document).ready(function () {
 
 	});
 
+	var $itmIndex = 1;
 	/*- click btn to next text-*/
 	$('.btn-go-next').on('click', function () {
 		var thisTest = $(this).closest('.test');
@@ -18,18 +19,17 @@ $(document).ready(function () {
 		var getCheckedAnswer = thisTest.find('.is-active').data('answer');
 
 		var answerNum = getAnwswerData(getCheckedAnswer);
-
 		var nextTest = $('.test-' + answerNum);
 
-		/*--- move line -----*/
 		var $this = $(this);
-		var $index = $('.test__btn').index($this) + 1;
-		$('.slider__item').eq($index).addClass('is-active-' + $index );
-		$('.slider__line').addClass('is-active-' + $index );
+		var $index = thisTest.find('.test__btn').index($this) + $itmIndex;
 
-		/*--- end move line -----*/
 
 		if(hasChacked){
+			$itmIndex++;
+			$('.slider__item').eq($index).addClass('is-active-' + $index );
+			$('.slider__line').addClass('is-active-' + $index );
+			/* -- move line -*/
 			thisTest.hide();
 			nextTest.show();
 			return true;

@@ -17,6 +17,10 @@ body
 	width: 75%
 	max-width: 940px
 	margin: 0 auto
+	+r(1025)
+		width: 90%
+	+r(700)
+		width: 96%
 
 
 * html .page__container
@@ -90,6 +94,8 @@ p
 		text-transform: uppercase
 		margin-bottom: 0
 		+lm
+		+r(350)
+			font-size: 6vw
 	&__subtitle
 		font-size: 18px
 		line-height: 1.33
@@ -133,6 +139,7 @@ p
 		width: 100%
 		background-color: $navy
 		z-index: 1
+		+tr(.8s)
 		&:after
 			content: ''
 			position: absolute
@@ -154,9 +161,11 @@ p
 		display: flex
 		align-items: center
 		justify-content: space-between
+
 	&__item
 		position: relative
 		width: 100%
+		flex: 0 1 100%
 		overflow: hidden
 		z-index: 1
 		&.is-active
@@ -196,6 +205,10 @@ p
 		font-size: 16px
 		color: #333
 		+ll
+		+r(600)
+			font-size: 12px
+		+r(380)
+			font-size: 10px
 
 .test
 	display: none
@@ -221,6 +234,9 @@ p
 		width: calc(50% - 20px)
 		margin: 10px
 		border-radius: 4px
+		+r(700)
+			width: 100%
+			margin: 10px 0
 		&.is-active
 			.test__variant
 				background-color: $fiolet
@@ -239,6 +255,8 @@ p
 		border-radius: 4px
 		outline: none
 		+ll
+		+r(700)
+			min-height: 64px
 		&:hover
 			background-color: rgba( 174, 151, 196, .6)
 			color: #fff
@@ -271,6 +289,9 @@ p
 	&-start,
 	&.is-active
 		display: block
+
+.text_left
+	text-align: left
 
 .animateAnsver
 	animation: shadow .5s 2 ease-in-out

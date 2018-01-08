@@ -1,10 +1,3 @@
-'head': {
-    defaults: {
-        title: 'Алгоритм Мухина',
-        useSocialMetaTags: false
-    }
-},
-
 'result': {
 	one: {
 		// simptom: {
@@ -28,6 +21,13 @@ _template: {
         title: 'Hello world',
         age: 10,
         button: false
+    }
+},
+
+'head': {
+    defaults: {
+        title: 'Алгоритм Мухина',
+        useSocialMetaTags: false
     }
 },
 

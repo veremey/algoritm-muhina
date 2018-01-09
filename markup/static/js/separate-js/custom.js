@@ -70,19 +70,19 @@ $(document).ready(function () {
 
 		});
 
+	/* ------ restart test ------ */
+		$('.js-restartTest').on('click', function () {
+			$itmIndex = 1;
+			$('body, html').animate({scrollTop : 0}, 600);
 
-	// /* ----- slider click or back test ------ */
-	// 	$('.slider__item').on('click', function () {
-	// 		var $index = $('.slider__item').index($(this));
-
-	// 		for (var i = $('.slider__item').length - 1; i >= $index; i--) {
-	// 			$('.slider__item').eq(i).removeClass('is-active-1 is-active-2');
-	// 			$('.slider__line').eq(i).removeClass('is-active-1 is-active-2');
-	// 		}
-
-
-	// 	});
-
+			$('.slider__line').removeClass('is-active-1 is-active-2');
+			$('.slider__item').each(function () {
+				$(this).removeClass('is-active-1 is-active-2');
+			});
+			$('.test__item').removeClass('is-active');
+			$('.test, .test__result').slideUp(600);
+			$('.test-start').slideDown('600');
+		});
 
 
 }); /*- end doc ready-*/

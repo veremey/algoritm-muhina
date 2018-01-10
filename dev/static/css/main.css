@@ -392,6 +392,7 @@ html, body {
 
 body {
   color: #000;
+  background-color: #FFF;
   font-family: 'lato-regular-webfont', Arial, sans-serif;
 }
 
@@ -493,8 +494,8 @@ p {
   left: 0;
   right: 0;
   height: 2px;
-  background-image: -webkit-linear-gradient(left, transparent 0%, #DEDEDE 4%, #DEDEDE 96%, transparent 100%);
-  background-image: linear-gradient(to right, transparent 0%, #DEDEDE 4%, #DEDEDE 96%, transparent 100%);
+  background-image: -webkit-linear-gradient(left, #fff 0%, #DEDEDE 4%, #DEDEDE 96%, #fff 100%);
+  background-image: linear-gradient(to right, #fff 0%, #DEDEDE 4%, #DEDEDE 96%, #fff 100%);
 }
 
 .constant__header:before {
